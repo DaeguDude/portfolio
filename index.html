@@ -17,60 +17,105 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="row">
     <nav class="nav">
-      <div class="container row">
+      <div class="row">
         <div class="nav__mobile">
           <button class="nav__btn">
             <i class="nav__menu-bar fas fa-bars"></i>
           </button>
         </div>
         <div class="nav__desktop">
-          <img class="nav__faceshot" src="" alt="" />
+          <img class="nav__faceshot" src="./img/faceshot2.png" alt="My face" />
           <a class="nav__section" href="">about</a>
-          <a class="nav__section" href="">experience</a>
+          <a class="nav__section" href="">project</a>
         </div>
       </div>
     </nav>
     <main class="main">
-      <section class="home">
+      <section class="section home">
         <div class="container">
           <h1 class="home__title">
             sanghak <span class="text-highlight--orange">kim</span>
           </h1>
           <p class="sub-title">
-            3542 BERRY STREET · CHEYENNE WELLS, CO 80810 · (317) 585-8468 ·
-            <span class="text-highlight--orange">NAME@EMAIL.COM</span>
+            Based in Seoul, Republic of Korea
+            <span class="text-highlight--orange">k3hppk@gmail.com</span>
           </p>
-          <p class="home__text">
-            I am experienced in leveraging agile frameworks to provide a robust
-            synopsis for high level overviews. Iterative approaches to corporate
-            strategy foster collaborative thinking to further the overall value
-            proposition.
+          <p class="text home__text">
+            I am a web developer who loves Javascript. My mission is to help
+            people with the power of technology. Make a web as acceessible as
+            possible is one of my main concern.
           </p>
           <div class="home__social-icons">
-            <a href="" class="home__social-icon"
+            <a
+              href="https://github.com/DaeguDude"
+              class="home__social-icon"
+              target="_blank"
               ><i class="fab fa-github"></i></a
-            ><a href="" class="home__social-icon"
+            ><a
+              href="https://twitter.com/Daegudude_Kim"
+              class="home__social-icon"
+              target="_blank"
               ><i class="fab fa-twitter"></i></a
-            ><a href="" class="home__social-icon"
+            ><a href="mailto: k3hppk@gmail.com" class="home__social-icon"
               ><i class="fas fa-envelope"></i
             ></a>
           </div>
         </div>
       </section>
-      <section class="project">
+      <section class="section project">
         <div class="container">
           <h2 class="section-title">project</h2>
-        </div>
+          <article class="project__content">
+            <h3 class="project__title">weather app</h3>
+            <a href="https://daegudude.github.io/weather-app/" target="_blank">
+              <img
+                class="project__img"
+                src="./img/weather.png"
+                alt="weather app demo image"
+              />
+            </a>
+            <div>
+              <button class="project__btn">live</button>
+              <button class="project__btn">demo</button>
+            </div>
+            <p class="text project__info">
+              Bring to the table win-win survival strategies to ensure proactive
+              domination. At the end of the day, going forward, a new normal
+              that has evolved from generation X is on the runway heading
+              towards a streamlined cloud solution. User generated content in
+              real-time will have multiple touchpoints for offshoring.
+            </p>
+          </article>
+          <article class="project__content">
+            <h3 class="project__title">weather app</h3>
+            <a href="https://daegudude.github.io/weather-app/" target="_blank">
+              <img
+                class="project__img"
+                src="./img/pomodoro.png"
+                alt="weather app demo image"
+              />
+            </a>
+            <div>
+              <button class="project__btn">live</button>
+              <button class="project__btn">demo</button>
+            </div>
+            <p class="text project__info">
+              Bring to the table win-win survival strategies to ensure proactive
+              domination. At the end of the day, going forward, a new normal
+              that has evolved from generation X is on the runway heading
+              towards a streamlined cloud solution. User generated content in
+              real-time will have multiple touchpoints for offshoring.
+            </p>
+          </article>
 
-        <article class="project__content">
-          <div class="container">
+          <article class="project__content">
             <h3 class="project__title">weather app</h3>
             <a href="https://daegudude.github.io/weather-app/" target="_blank">
               <img
                 class="project__img"
-                src="./img/weather.png"
+                src="./img/tictactoe.png"
                 alt="weather app demo image"
               />
             </a>
@@ -78,22 +123,21 @@
               <button class="project__btn">live</button>
               <button class="project__btn">demo</button>
             </div>
-            <p class="project__info">
+            <p class="text project__info">
               Bring to the table win-win survival strategies to ensure proactive
               domination. At the end of the day, going forward, a new normal
               that has evolved from generation X is on the runway heading
               towards a streamlined cloud solution. User generated content in
               real-time will have multiple touchpoints for offshoring.
             </p>
-          </div>
-        </article>
-        <article class="project__content">
-          <div class="container">
+          </article>
+
+          <article class="project__content">
             <h3 class="project__title">weather app</h3>
             <a href="https://daegudude.github.io/weather-app/" target="_blank">
               <img
                 class="project__img"
-                src="./img/weather.png"
+                src="./img/todolist.png"
                 alt="weather app demo image"
               />
             </a>
@@ -101,61 +145,15 @@
               <button class="project__btn">live</button>
               <button class="project__btn">demo</button>
             </div>
-            <p class="project__info">
+            <p class="text project__info">
               Bring to the table win-win survival strategies to ensure proactive
               domination. At the end of the day, going forward, a new normal
               that has evolved from generation X is on the runway heading
               towards a streamlined cloud solution. User generated content in
               real-time will have multiple touchpoints for offshoring.
             </p>
-          </div>
-        </article>
-        <article class="project__content">
-          <div class="container">
-            <h3 class="project__title">weather app</h3>
-            <a href="https://daegudude.github.io/weather-app/" target="_blank">
-              <img
-                class="project__img"
-                src="./img/weather.png"
-                alt="weather app demo image"
-              />
-            </a>
-            <div>
-              <button class="project__btn">live</button>
-              <button class="project__btn">demo</button>
-            </div>
-            <p class="project__info">
-              Bring to the table win-win survival strategies to ensure proactive
-              domination. At the end of the day, going forward, a new normal
-              that has evolved from generation X is on the runway heading
-              towards a streamlined cloud solution. User generated content in
-              real-time will have multiple touchpoints for offshoring.
-            </p>
-          </div>
-        </article>
-        <article class="project__content">
-          <div class="container">
-            <h3 class="project__title">weather app</h3>
-            <a href="https://daegudude.github.io/weather-app/" target="_blank">
-              <img
-                class="project__img"
-                src="./img/weather.png"
-                alt="weather app demo image"
-              />
-            </a>
-            <div>
-              <button class="project__btn">live</button>
-              <button class="project__btn">demo</button>
-            </div>
-            <p class="project__info">
-              Bring to the table win-win survival strategies to ensure proactive
-              domination. At the end of the day, going forward, a new normal
-              that has evolved from generation X is on the runway heading
-              towards a streamlined cloud solution. User generated content in
-              real-time will have multiple touchpoints for offshoring.
-            </p>
-          </div>
-        </article>
+          </article>
+        </div>
       </section>
     </main>
   </body>
