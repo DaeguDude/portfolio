@@ -202,6 +202,8 @@ img {
 .project__img {
   width: 80%;
   max-width: 300px;
+  max-height: 200px;
+  object-fit: cover;
 }
 
 .project__btn {
