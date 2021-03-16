@@ -217,6 +217,10 @@ img {
   max-width: 150px;
 }
 
+.project__btn a {
+  color: #fff;
+}
+
 .project__btn:hover {
   background: var(--primary);
 }
