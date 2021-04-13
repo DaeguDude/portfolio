@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DaeguDude's Portfolio</title>
+    <title>김상학 포트폴리오</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -18,18 +18,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="row">
-    <nav class="nav">
-      <div class="row">
-        <div class="nav__mobile">
-          <button class="nav__btn">
-            <i class="nav__menu-bar fas fa-bars"></i>
-          </button>
-        </div>
-        <div class="nav__desktop">
-          <img class="nav__faceshot" src="./img/faceshot2.png" alt="My face" />
-          <a class="nav__section" href="#home">about</a>
-          <a class="nav__section" href="#project">project</a>
-        </div>
+    <nav class="nav row">
+      <div class="nav__mobile">
+        <button class="nav__btn">
+          <i class="nav__menu-bar fas fa-bars"></i>
+        </button>
+
+        <ul class="nav__list">
+          <li class="nav__item">about</li>
+          <li class="nav__item">project</li>
+        </ul>
+      </div>
+      <div class="nav__desktop">
+        <img class="nav__faceshot" src="./img/faceshot2.png" alt="My face" />
+        <a class="nav__section" href="#home">about</a>
+        <a class="nav__section" href="#project">project</a>
       </div>
     </nav>
     <main class="main">
@@ -39,13 +42,16 @@
             sanghak <span class="text-highlight--orange">kim</span>
           </h1>
           <p class="sub-title">
-            Based in Seoul, Republic of Korea
+            서울특별시, 대한민국
             <span class="text-highlight--orange">k3hppk@gmail.com</span>
           </p>
           <p class="text home__text">
-            I am a web developer who loves Javascript. My mission is to help
-            people with the power of technology. Aside from development, I spend
-            my free time doing Jiujitsu and reading books.
+            독학으로 프로그래밍을 배운 웹 개발자입니다. 주로 자바스크립트와
+            React를 통하여 개발을 하고 있습니다. 기술을 배우고 그 기술을
+            공유하는 것을 좋아합니다. 대학교 내 웹 개발 동아리 '자스민'에서
+            자바스크립트를 가르쳤습니다. 유지보수가 가능한 코드를 작성하는데
+            많은 관심을 가지고 있고, 문제 해결 능력을 키우기 위해서는 많은
+            문제를 풀어봐야 한다는 믿음아래 개인 프로젝트를 많이 진행해왔습니다.
           </p>
           <div class="home__social-icons">
             <a
@@ -68,84 +74,7 @@
         <div class="container">
           <h2 class="section-title">project</h2>
           <article class="project__content">
-            <h3 class="project__title">weather app</h3>
-            <a href="https://daegudude.github.io/weather-app/" target="_blank">
-              <img
-                class="project__img"
-                src="./img/weather.png"
-                alt="weather app demo image"
-              />
-            </a>
-            <div>
-              <a href="https://daegudude.github.io/weather-app/" target="_blank"
-                ><button class="project__btn">live</button></a
-              >
-              <a href="https://github.com/DaeguDude/weather-app" target="_blank"
-                ><button class="project__btn">repo</button></a
-              >
-            </div>
-            <p class="text project__info">
-              A responsive website that can show a weather information of a city
-              that you are searching for.
-            </p>
-          </article>
-
-          <article class="project__content">
-            <h3 class="project__title">pomodoro timer</h3>
-            <a
-              href="https://daegudude.github.io/pomodoro-project/"
-              target="_blank"
-            >
-              <img
-                class="project__img"
-                src="./img/pomodoro.png"
-                alt="weather app demo image"
-              />
-            </a>
-            <div>
-              <a
-                href="https://daegudude.github.io/pomodoro-project/"
-                target="_blank"
-                ><button class="project__btn">live</button></a
-              >
-              <a
-                href="https://github.com/DaeguDude/pomodoro-project"
-                target="_blank"
-                ><button class="project__btn">repo</button></a
-              >
-            </div>
-            <p class="text project__info">
-              In this project, I built pomodoro timer with other 3 people from
-              my school. We development in the component-wise, and my part is
-              Task component.
-            </p>
-          </article>
-
-          <article class="project__content">
-            <h3 class="project__title">todolist</h3>
-            <a href="https://daegudude.github.io/todoList/" target="_blank">
-              <img
-                class="project__img"
-                src="./img/todolist.png"
-                alt="todolist app demo image"
-              />
-            </a>
-            <div>
-              <a href="https://daegudude.github.io/todoList/" target="_blank"
-                ><button class="project__btn">live</button></a
-              >
-              <a href="https://github.com/DaeguDude/todoList" target="_blank"
-                ><button class="project__btn">repo</button></a
-              >
-            </div>
-            <p class="text project__info">
-              Basic todolist built with Javascript. Focused on applying OOP
-              concept, especially single responsibility principle.
-            </p>
-          </article>
-
-          <article class="project__content">
-            <h3 class="project__title">CV application</h3>
+            <h3 class="project__title">이력서 생성기</h3>
             <a
               href="https://daegudude.github.io/CV-application/"
               target="_blank"
@@ -169,13 +98,93 @@
               >
             </div>
             <p class="text project__info">
-              CV application app built with React. No styling is added at the
-              moment. You can add and edit your information.
+              React로 만든 이력서를 만들어 주는 앱입니다. 클래스 컴포넌트로
+              작업을 진행하였고, state와 props의 차이점 또한 리액트의 기본
+              개념을 배우는데 아주 유용한 프로젝트였습니다.
             </p>
           </article>
 
           <article class="project__content">
-            <h3 class="project__title">library</h3>
+            <h3 class="project__title">날씨 앱</h3>
+            <a href="https://daegudude.github.io/weather-app/" target="_blank">
+              <img
+                class="project__img"
+                src="./img/weather.png"
+                alt="weather app demo image"
+              />
+            </a>
+            <div>
+              <a href="https://daegudude.github.io/weather-app/" target="_blank"
+                ><button class="project__btn">live</button></a
+              >
+              <a href="https://github.com/DaeguDude/weather-app" target="_blank"
+                ><button class="project__btn">repo</button></a
+              >
+            </div>
+            <p class="text project__info">
+              순수 자바스크립트를 이용하여 만든 전 세계 도시의 날씨를 알 수 있는
+              프로젝트입니다. OpenWeatherMap 에서 제공하는 날씨 API를 사용하여
+              Promise를 이용한 비동기 작업을 해주었습니다.
+            </p>
+          </article>
+
+          <article class="project__content">
+            <h3 class="project__title">포모도로 타이머</h3>
+            <a
+              href="https://daegudude.github.io/pomodoro-project/"
+              target="_blank"
+            >
+              <img
+                class="project__img"
+                src="./img/pomodoro.png"
+                alt="weather app demo image"
+              />
+            </a>
+            <div>
+              <a
+                href="https://daegudude.github.io/pomodoro-project/"
+                target="_blank"
+                ><button class="project__btn">live</button></a
+              >
+              <a
+                href="https://github.com/DaeguDude/pomodoro-project"
+                target="_blank"
+                ><button class="project__btn">repo</button></a
+              >
+            </div>
+            <p class="text project__info">
+              계명대학교 웹 개발 동아리 '자스민'에서 제가 가르친 신입 회원
+              3분들과 함께 포모도로 타이머를 만들었습니다. 순수 자바스크립트로
+              이용하였고, webpack을 이용하여 각각의 객체들을 묶어주었습니다
+            </p>
+          </article>
+
+          <article class="project__content">
+            <h3 class="project__title">할 일 리스트</h3>
+            <a href="https://daegudude.github.io/todoList/" target="_blank">
+              <img
+                class="project__img"
+                src="./img/todolist.png"
+                alt="todolist app demo image"
+              />
+            </a>
+            <div>
+              <a href="https://daegudude.github.io/todoList/" target="_blank"
+                ><button class="project__btn">live</button></a
+              >
+              <a href="https://github.com/DaeguDude/todoList" target="_blank"
+                ><button class="project__btn">repo</button></a
+              >
+            </div>
+            <p class="text project__info">
+              개인의 할 일을 정리할 수 있는 '할 일 리스트' 입니다. 이
+              프로젝트에서는 OOP의 SOLID 원칙 중, 가장 중요한 단일 책임 원칙을
+              적용하여 만들었습니다.
+            </p>
+          </article>
+
+          <article class="project__content">
+            <h3 class="project__title">도서관</h3>
             <a href="https://daegudude.github.io/TOP-Library/" target="_blank">
               <img
                 class="project__img"
@@ -192,13 +201,15 @@
               >
             </div>
             <p class="text project__info">
-              Library project where user can add a book information to the list.
-              It provides functionality to toggle between read status, and
-              removing the book from the list.
+              자신의 읽은 책의 정보를 기록할 수 있는 도서관 프로젝트입니다.
+              파이어베이스를 이용하여 웹이 종료되어도 기록을 보관할 수 있게
+              해주었습니다. 처음으로 파이어베이스의 공식문서를 읽어가며 한
+              작업이라 시행오차가 많았지만 재밌는 작업이었습니다.
             </p>
           </article>
         </div>
       </section>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
